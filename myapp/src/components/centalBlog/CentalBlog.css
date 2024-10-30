@@ -1,0 +1,79 @@
+.imager {
+    overflow: hidden;
+    margin-left: 10px;
+    width: 95%;
+    position: relative; /* Positioning context for absolute children */
+}
+
+.imager img {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevents extra space below the image */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: transform 0.5s ease; /* Smooth transition for scaling */
+}
+
+.imager::after {
+    content: '';
+    position: absolute;
+    bottom: 0; /* Start from the bottom */
+    left: 0;
+    right: 0;
+    height: 100%; /* Full height of the image */
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent white color */
+    transform: translateY(100%); /* Start off-screen */
+    transition: transform 0.5s ease; /* Smooth transition for sliding */
+    z-index: 1; /* Ensure it appears above the image */
+}
+
+.imager:hover img {
+    transform: scale(1.3); /* Scale the image up on hover */
+}
+
+.imager:hover::after {
+    transform: translateY(0); /* Slide the overlay up to cover the image */
+}
+
+.Card {
+    border: 1px solid rgb(232, 37, 37);
+    padding: 20px;
+    position: relative; /* Required for absolute positioning of child elements */
+    background-color: white; /* Default background */
+    border-bottom-right-radius: 10px; /* Curve the bottom right corner */
+    border-top-left-radius: 10px; /* Curve the top right corner */
+
+}
+.Card:hover {
+    box-shadow: 0 8px 20px rgba(238, 98, 98, 0.3); /* Darker shadow on hover */
+}
+.logo-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Center items vertically */
+}
+
+.logo1 {
+    flex: 1; /* Allow it to take space */
+    text-align: left; /* Align text to the left */
+    padding-left: 30px; /* Use padding instead of margin */
+    padding-top: 20px;
+}
+
+.logo2 {
+    flex: 1; /* Allow it to take space */
+    text-align: right; /* Align text to the right */
+    padding-right: 30px; /* Use padding instead of margin */
+    padding-top: 20px;
+}
+
+.body1 {
+    background-color: white;
+}
+
+.body1 h3 {
+    text-align: left;
+    margin-left: 10px;
+    font-size: larger;
+    font-weight: 800;
+}

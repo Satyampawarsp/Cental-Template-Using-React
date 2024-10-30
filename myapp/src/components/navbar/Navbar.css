@@ -1,0 +1,10 @@
+.navbar-brand i{
+    color: rgba(255, 0, 0, 0.564);
+    margin-right:12px;
+}
+.navbar-brand h1{
+    color:red;
+}
+.navbar-brand:hover {
+    color: rgba(255, 0, 0, 0.8); /* Darker red on hover */
+}

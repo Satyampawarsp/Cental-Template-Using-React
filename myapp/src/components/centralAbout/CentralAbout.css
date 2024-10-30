@@ -1,0 +1,63 @@
+.imager{
+    height:50%;
+    width:90%;
+    border-radius:10px 20px 5px 10px;
+}
+.about-img{
+    /* background-color: maroon; */
+    height:500px;
+}
+.section1{
+    height:100%;
+    width:300px;
+    border: none;
+    background-color: transparent;
+    margin-top:30px;
+    margin-bottom:40px;
+    margin-left:30px;
+}
+.imager2{
+    position: relative;
+    bottom:150px;
+    left:78px;
+    border-radius: 10px;
+    height:80%;
+    width:80%;
+}
+.card{
+    border: none;
+    background-color: rgba(220, 220, 220, 0.201);
+}
+.card-header{
+    border: none;
+    text-align: center;
+    font-size:60px;
+    color: #dc3545;;
+}
+.card-body{
+    border: none;
+    background: none;
+    background-color: rgba(220, 220, 220, 0.201);
+    text-align: center;
+    font-size:x-large;
+    
+
+}
+.card-footer{
+    border: none;
+
+}
+.font{
+    align-items: center;
+    
+}
+@media (max-width: 768px) {
+    .imager {
+        width: 100%; /* Make image take full width on smaller screens */
+    }
+
+    .section1 {
+        max-width: 100%; /* Allow cards to be full width on smaller screens */
+   margin-left: 50px; /* Adjust margin for smaller screens */     
+    }
+}

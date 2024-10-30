@@ -1,0 +1,64 @@
+.cental-features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+/* For the image and feature columns */
+.feature-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Space between cards */
+}
+
+.feature-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 992px) {
+    .cental-features {
+        flex-direction: column-reverse;
+        margin-left:4rem; /* Stack elements vertically */
+    }
+
+    .feature-image {
+        display: none; /* Hide the image */
+    }
+
+    .feature-column {
+        width: 100%; /* Cards take full width on small screens */
+        align-items: center; /* Center cards on small screens */
+    }
+}
+
+@media (min-width: 992px) {
+    .feature-column {
+        padding: 0 20px; /* Add padding between feature columns and the image */
+    }
+
+    .cental-features {
+        gap: 2rem; /* Space between columns and the image */
+    }
+}
+.feature-icon {
+    font-size: 3rem; /* Adjust size of the icons */
+    color: #dc3545; /* Set icon color, you can change this to match your design */
+    width: 60px;
+/* background-color: #35dcdc; */
+
+    
+
+}
+
+

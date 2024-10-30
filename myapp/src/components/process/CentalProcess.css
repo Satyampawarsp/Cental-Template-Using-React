@@ -1,0 +1,24 @@
+.imger{
+    background-image: url('/public/Images/Process.jpg');
+    background-color: rgba(10, 0, 10, 0.892);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+.carder{
+    background-color:#1F2E4E;
+    margin-bottom:45px;
+    border-radius:2px 12px 12px 12px;
+}
+.carder h4{
+    text-align:center;
+    color: aquamarine;
+}
+.carder p{
+    color:wheat;
+}
+.imger p{
+    font-size: larger;
+    font-weight: 300;
+}

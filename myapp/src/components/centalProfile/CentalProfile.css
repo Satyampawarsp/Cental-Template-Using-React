@@ -1,0 +1,60 @@
+.profile {
+    background-color: white;
+    margin-top: 10px;
+}
+
+.first {
+    font-size: 40px; /* Corrected font size syntax */
+}
+
+.team-img {
+    position: relative;
+    top: -100px;
+    margin-bottom: -100px;
+    z-index: 3;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.team-item {
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+    z-index: 1;
+    border-radius: 10px;
+    background: var(--bs-light);
+    transition: background 0.5s ease; /* Smooth transition for background color */
+}
+
+.team-item:hover {
+    background: linear-gradient(to top, navy, transparent); /* Navy blue color from bottom to top on hover */
+}
+
+.team-item .team-img::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3); /* Optional overlay effect */
+    transition: height 0.5s ease; /* Smooth transition for overlay height */
+}
+
+.team-item:hover .team-img::after {
+    height: 100%; /* Show the overlay on hover */
+}
+
+.team-content {
+    position: relative;
+    z-index: 5;
+}
+
+.team-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: red;
+}
